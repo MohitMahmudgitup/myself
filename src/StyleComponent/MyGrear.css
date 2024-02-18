@@ -1,0 +1,59 @@
+.p_MyGrear{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.lefth1{
+    text-align: none;
+    font-weight: 800;
+
+    /* color: #ff0000; */
+}
+.mainCardMygrear{
+    /* background-color: blueviolet; */
+    width: 350px;
+    height: 650px;
+    /* border-radius: 20px; */
+    object-fit: cover;
+    margin: 20px 0;
+}
+.mainCardMygrear .cardImgMygear{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    /* background-color: aquamarine; */
+}
+.outLockCardMygrear{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90vw;
+    /* margin: ; */
+}
+.imgMygrear{
+    /* object-fit: cover; */
+    border-radius: 8px;
+    width:100%;
+    height: 100%;
+}
+.textCardMygrear{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px 0px ;
+    /* background-color: blue; */
+}
+.p_grear{
+    font-size: .7rem;
+}
+@media (max-width:900px) {
+    .lefth1{
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .p_grear{
+        font-size: 1rem;
+    }
+}

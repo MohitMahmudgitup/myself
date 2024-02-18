@@ -1,0 +1,60 @@
+.liftNav{
+    width: 25vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(106, 134, 187);
+    padding-top: 10px;
+    padding-left:10px;
+    /* position: sticky; */
+    overflow-y: scroll;
+}
+.liftNavItem{
+    display: flex;
+    flex-direction: column;
+    /* margin-right:-10px ; */
+    
+}
+.liftNavItemText{
+    margin: 2px;
+    /* text-align: center; */
+    height: 40px;
+    width: 90%;
+    background-color: rgba(68, 68, 68, 0.158);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 0px 0px 15px;
+    color: white;
+}
+.liftNavItemText:hover{
+    color: white;
+    background-color: rgba(63, 63, 63, 0.534);
+
+}
+
+@media (max-width:900px) {
+
+    .liftNav{
+        width: 70%;
+        /* display: none; */
+    }
+    .displayNav1{
+        display: none;
+    }
+    .liftNavItemText{
+        margin: 2px;
+        height: 40px;
+        width: 90%;
+        background-color: rgba(68, 68, 68, 0.158);
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 5px 0px 0px 15px;
+        color: white;
+    }
+    .liftNavItemText:hover{
+        color: white;
+        background-color: rgba(68, 68, 68, 0.158);
+
+    
+    }
+  
+}
