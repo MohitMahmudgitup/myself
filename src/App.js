@@ -62,7 +62,7 @@ function App() {
       setCoursesCardMode("mainCardLightMode")
       setCoursesTextColor("lightcolor")
       setfiltericon("filtericonblack")
-
+//he
     }
     else {
       setMode("darkmode")
