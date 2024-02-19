@@ -88,7 +88,7 @@ function App() {
 
       
       <Routes>
-        <Route path='/' element={<Home titel="Learn to Code" CoursesCardMode={CoursesCardMode} CoursesTextColor={CoursesTextColor} mode={mode} />} />
+        <Route path='/' element={<Home titel="Learn to Code" CoursesCardMode={CoursesCardMode}  mode={mode} CoursesTextColor={CoursesTextColor} />} />
         <Route path='/MyGear' element={<MyGear CoursesCardMode={CoursesCardMode} CoursesTextColor={CoursesTextColor} />} />
         <Route path='/Courses' element={<Courses titel="Premium Courses" footer="More Courses" mode={mode} CoursesCardMode={CoursesCardMode} CoursesTextColor={CoursesTextColor} />} />
         <Route path='/Tutorials' element={<Tutorials titel="Tutorials" mode={mode} />} />

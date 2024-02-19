@@ -1,5 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
+import { motion } from "framer-motion"
 
 export default function HOme(props) {
 
@@ -7,12 +8,13 @@ export default function HOme(props) {
         <>
             <div className='containerHome'>
                 <div className='containtCardHome'>
-                    <h1>{props.titel}</h1>
+                    <h1 className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`}>
+                    {props.titel}</h1>
                     {/* <h3>I,m a</h3> */}
-                    <Typewriter options={{ strings: ["'With the world's largest web developer site."], autoStart: true, loop: true, }} />
+                    <Typewriter  options={{ strings: ["'With the world's largest web developer site."], autoStart: true, loop: true, }}  style={{ color: 'black' }} />
                     <p id='typewriter'>{props.subtitel}</p>
                     <div className="btnHome">
-                        <button className='btn'>Free Courses</button>
+                    <a className='btn' href="https://www.youtube.com/results?search_query=free+course"> Free Course</a> 
                         <button className='btn'> Expore Bolog</button>
                     </div>
                 </div>
@@ -35,8 +37,10 @@ export default function HOme(props) {
                             <h6 className={`${props.CoursesTextColor} `}>FREE COURSE</h6>
                             <h4 className={`${props.CoursesTextColor} `}>Python Tutorials - 100 Days of Code</h4>
                             <p className={`${props.CoursesTextColor} `}>Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!</p>
+                            <a className='btn' href="https://www.youtube.com/watch?v=i3-PQ4CkU8s&list=PLSzsOkUDsvdvGZ2fXGizY_Iz9j8-ZlLqh">Watch video!</a>
                         </div>
-                    </div>          <div className={`mainCard ${props.CoursesCardMode} ${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`}>
+                    </div>         
+                     <div className={`mainCard ${props.CoursesCardMode} ${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`}>
                         <div className="cardImg">
                             <img className="imgCourses" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh9p-Bt3hpwCqIout8x9aIZP1yhHkHflJokQ&usqp=CAU" alt="" />
                         </div>
@@ -44,6 +48,7 @@ export default function HOme(props) {
                             <h6 className={`${props.CoursesTextColor} `}>FREE COURSE</h6>
                             <h4 className={`${props.CoursesTextColor} `}>Tailwind Course In Hindi</h4>
                             <p className={`${props.CoursesTextColor} `}>Complete Tailwind CSS Course by CodeWithHarry in Hindi - Learn Tailwind CSS from scratch for free!</p>
+                            <a className='btn' href="https://www.youtube.com/watch?v=6LhRLZ5_IgI&list=PLjVLYmrlmjGfpwYhVAbiGAhFl6h8XWDV_">Watch video!</a>
                         </div>
                     </div>          <div className={`mainCard ${props.CoursesCardMode} ${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`}>
                         <div className="cardImg">
@@ -53,6 +58,7 @@ export default function HOme(props) {
                             <h6 className={`${props.CoursesTextColor} `}>FREE COURSE</h6>
                             <h4 className={`${props.CoursesTextColor} `}>React Js Tutorials For Beginners</h4>
                             <p className={`${props.CoursesTextColor} `}>React is a free and open-source front-end JavaScript library. This series will cover React from starting to the end. We will learn react from the ground up</p>
+                            <a className='btn' href="https://www.youtube.com/watch?v=LX4JUscM9Sk&list=PLjVLYmrlmjGdnIQKgnTeR1T9-1ltJEaJh">Watch video!</a>
                         </div>
                     </div>
 

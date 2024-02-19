@@ -12,15 +12,18 @@ export default function HTML_Introduction(props) {
     
   const [siteNavs, setSiteNavs] = useState("liftNav")
   const [right_leftion, setright_leftion] = useState("https://www.svgrepo.com/show/325437/nav-arrow-right.svg")
+  const [htmlNav, setHtmlNav] = useState("displayNone")
   
 
 
   const right_leftionsipt =()=>{
     if(right_leftion === "https://www.svgrepo.com/show/325437/nav-arrow-right.svg"){
       setright_leftion("https://www.svgrepo.com/show/325435/nav-arrow-left.svg")
+      setHtmlNav("liftNavItem")
     }
     else{
       setright_leftion("https://www.svgrepo.com/show/325437/nav-arrow-right.svg")
+      setHtmlNav("displayNone")
       
     }
   }
@@ -28,7 +31,8 @@ export default function HTML_Introduction(props) {
     return (
         <>
             {/* <NAV_home /> */}
-      <NAV_home siteNavs={siteNavs} right_leftionsipt ={right_leftionsipt} right_leftion={right_leftion}  />
+      <NAV_home siteNavs={siteNavs} right_leftionsipt ={right_leftionsipt} right_leftion={right_leftion} htmlNav={htmlNav}  />
+
 
         
             <div className='rightDisplay'>

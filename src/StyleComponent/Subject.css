@@ -11,6 +11,7 @@
     box-shadow: 0 0 5px black;
     /* background-color: aqua; */
     /* background-color: brown; */
+    display: none;
 }
 .SubjectNav{
     /* color: #000; */
@@ -44,6 +45,7 @@
         padding: 4px;
         overflow: hidden;
     top: 70px;
+    border-radius: 0px 0px 25px 25px;
 
 
     }

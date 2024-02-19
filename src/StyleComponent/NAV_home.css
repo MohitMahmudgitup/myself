@@ -34,7 +34,11 @@
 @media (max-width:900px) {
 
     .liftNav{
-        width: 70%;
+        /* width: 70%; */
+        
+        /* position: relative; */
+        /* margin: 100px 10px; */
+        height: 100%;
         /* display: none; */
     }
     .displayNav1{
@@ -49,12 +53,17 @@
         border-radius: 20px;
         padding: 5px 0px 0px 15px;
         color: white;
+        /* display: none; */
     }
+
     .liftNavItemText:hover{
         color: white;
         background-color: rgba(68, 68, 68, 0.158);
 
     
+    }
+    .displayNone{
+        display: none;
     }
   
 }

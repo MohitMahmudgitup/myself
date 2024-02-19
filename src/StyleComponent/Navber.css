@@ -14,7 +14,7 @@
     padding: 15px 45px;
     position: sticky;
     /* position: relative; */
-    z-index: 999;
+    z-index: 1999;
     /* background: #cecece; */
 }
 
@@ -24,26 +24,6 @@
     width: 500px;
 }
 
-.navItam a {
-    border-radius: 20px;
-    text-decoration: none;
-    padding: 1px 25px;
-
-}
-
-.navItam a:hover {
-    background-color: hsla(231, 92%, 61%, 0.267);
-}
-
-.navItam a.active {
-    font-weight: 600;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/* a.active:hover{
-    color: #9a00c5;
-} */
 .nav-icon {
     display: none;
 }
@@ -62,18 +42,35 @@
         /* display: flex; */
         /* position: relative; */
         padding: 0px 15px;
-        box-shadow: 0 0 0 0.1px black;
-
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.199);
         height: 70px;
+        border-radius: 20px 20px;
+        position: fixed;
+        width: 100%;
+        top: 10px;
+
     }
 
-    .navItam a {
+    a {
         text-decoration: none;
-        /* color: #000; */
         font-size: 1rem;
         font-weight: 650;
-        /* padding: 0px 15px; */
-        /* margin: 0 20px; */
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 4px 100px;
+
+    }
+
+    a.active {
+        font-weight: 500;
+        text-decoration: none;
+        color: #545ffa;
+        background-color: rgba(133, 133, 133, 0.164);
+        border-radius: 25px;
+    }
+
+    a.active:hover {
+        color: #000;
     }
 
     .navItam {
@@ -86,13 +83,6 @@
         width: 100vw;
     }
 
-    .navItam a.active {
-        font-weight: 900;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: blue;
-        border-radius: 8px;
-    }
 
     .nav-icon {
         display: block;
@@ -114,44 +104,26 @@
         flex-direction: column;
         position: absolute;
         /* background-color: #cecece; */
-        width: 100%;
+        width: 90%;
         height: 50vh;
-        top: 70px;
-        left: 0px;
+        top: 80px;
+        left: 34px;
+        border-radius: 30px;
         z-index: 1;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.322);
 
     }
 
-    .navItamclose a.active {
-        font-weight: 500;
-        text-decoration: none;
-        color: #000000;
-        background-color: rgba(133, 133, 133, 0.164);
-        border-radius: 25px;
-    }
-
-    .navItamclose a.active:hover {
-        color: #000;
-    }
-
-    .navItamclose a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        /* width: 100%; */
-        padding: 4px 100px;
-    }
 
     .Logo {
         font-size: 2rem;
         padding-top: 4px;
         font-weight: bold;
-        /* top: 15px; */
-        /* position: absolute; */
+        color: #a4c91f;
     }
 
     .darkmodeicon {
         width: 30px;
-        /* color: #ffffff; */
     }
 
     .mblnaviconset {
@@ -163,7 +135,8 @@
         display: flex;
         width: 130px;
     }
-    .closeNav{
+
+    .closeNav {
         display: none;
     }
 }

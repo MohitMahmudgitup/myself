@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,34 +8,72 @@
 }
 
 /* App.js */
-.lightmode{
-    background-color :hsl(231, 91%, 78%) ;
+.lightmode {
+    background-color: hsl(262, 9%, 64%);
     color: black;
 }
-.darkmode{
-    background-color: #8459d4;
-    color: white;
-}
-.darkcolor{
-    color: white;
-}
-.lightcolor{
-    color: #000000;
-}
-.mainCardDarkMode{
 
-    background: linear-gradient(0deg, rgba(201,201,201,1) 0%, rgba(255,255,255,0) 0%, rgba(82,0,255,1) 56%);
+.darkmode {
+    background-color: #3e0b9b;
+    color: white;
 }
-.mainCardLightMode{
-background: linear-gradient(0deg, rgba(201,201,201,1) 0%, rgba(255,255,255,0) 0%, rgba(207,201,222,1) 45%);
+
+.darkcolor {
+    color: white;
 }
-.filtericonlight{
+
+.lightcolor {
+    color: #000000;
+    /* font-weight: 800; */
+
+}
+.lightcolor:hover {
+    color: #000000;
+
+}
+.lightcolor.active{
+
+    font-weight: 900;
+
+}
+a {
+    color: #35035f;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1px 25px;
+}
+
+a:hover {
+    color: #b19ccc;
+
+
+}
+a.active{
+
+    font-weight: 900;
+
+}
+
+
+
+.mainCardDarkMode {
+
+    background: linear-gradient(0deg, rgba(201, 201, 201, 1) 0%, rgba(255, 255, 255, 0) 0%, rgba(82, 0, 255, 1) 56%);
+}
+
+.mainCardLightMode {
+    background: linear-gradient(0deg, rgba(201, 201, 201, 1) 0%, rgba(255, 255, 255, 0) 0%, rgba(207, 201, 222, 1) 45%);
+}
+
+.filtericonlight {
     filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(183deg) brightness(97%) contrast(100%);
 }
-.filtericonblack{
-filter: invert(0%) sepia(12%) saturate(1703%) hue-rotate(201deg) brightness(95%) contrast(105%);
+
+.filtericonblack {
+    filter: invert(0%) sepia(12%) saturate(1703%) hue-rotate(201deg) brightness(95%) contrast(105%);
 }
-h1{
+
+h1 {
     font-size: rem;
 }
 
@@ -42,17 +81,39 @@ h1{
 
 ::-webkit-scrollbar {
     width: 4px;
-    
-  }
-  
 
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+
+
+::-webkit-scrollbar-thumb {
     /* background-color: #68686893; */
     border-radius: 10px;
     border: 3px solid #6d6d6d;
-  }
-  .rightDisplay::-webkit-scrollbar{
-    width: 0px;
-  }
+}
 
+.rightDisplay::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media(max-width:900px) {
+    .lightmode {
+        background-color: hsl(0, 0%, 92%);
+        color: black;
+    }    
+    .lightmode.active {
+        background-color: hsl(0, 0%, 92%);
+        color: black;
+    }
+
+    .darkmode {
+        background-color: #6d48b3;
+        color: white;
+    }
+    .lightcolor.active{
+
+        font-weight: 700;
+    
+    }
+
+}
