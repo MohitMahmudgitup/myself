@@ -40,7 +40,7 @@ function App() {
 
  const mobileNavoff =()=>{
   if(NavNames === NavNames){
-    NavNames("closeNav")
+    setNavNames("closeNav")
     setNavClick("https://www.svgrepo.com/show/394297/nav-icon-a.svg")
   }
  }
