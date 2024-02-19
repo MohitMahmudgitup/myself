@@ -10,10 +10,10 @@ export default function Navber(props) {
           <h3 className="Logo" >{props.logo}</h3>
         </div>
         <div className={`${props.NavNames} ${props.mode}`}>
-          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} to="/">Home</NavLink>
-          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} to='/MyGear'>My Gear</NavLink>
-          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} to='/Courses'>Courses</NavLink>
-          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} to='/Tutorials'>Tutorials</NavLink>
+          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} onClick={props.mobileNavoff} to="/">Home</NavLink>
+          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} onClick={props.mobileNavoff} to='/MyGear'>My Gear</NavLink>
+          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} onClick={props.mobileNavoff} to='/Courses'>Courses</NavLink>
+          <NavLink className={`${props.mode === "lightmode" ? "lightcolor" : "darkcolor"}`} onClick={props.mobileNavoff} to='/Tutorials'>Tutorials</NavLink>
         </div>
         <div className="mblnaviconset">
         <div className="form-check form-switch">

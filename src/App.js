@@ -38,19 +38,23 @@ function App() {
   const [NavNames, setNavNames] = useState("navItam")
   const [filtericon, setfiltericon] = useState("filtericonblack")
 
+ const mobileNavoff =()=>{
+  if(NavNames === NavNames){
+    NavNames("closeNav")
+    setNavClick("https://www.svgrepo.com/show/394297/nav-icon-a.svg")
+  }
+ }
 
 
   const clickNavIcon = () => {
     if (NavClick === "https://www.svgrepo.com/show/394297/nav-icon-a.svg") {
       setNavClick("https://www.svgrepo.com/show/500512/close-bold.svg")
       setNavNames("navItamclose")
-
     }
+
     else {
       setNavClick("https://www.svgrepo.com/show/394297/nav-icon-a.svg")
       setNavNames("navItam")
-
-
     }
   }
 
@@ -78,7 +82,7 @@ function App() {
   return (
     <>
 
-      <Navber logo="Titel C# " mode={mode} toggleMode={toggleMode} NavClick={NavClick} clickNavIcon={clickNavIcon} NavNames={NavNames} filtericon={filtericon} />
+      <Navber logo="Titel C# " mode={mode} toggleMode={toggleMode} NavClick={NavClick} clickNavIcon={clickNavIcon} NavNames={NavNames} filtericon={filtericon} mobileNavoff={mobileNavoff}/>
       {/* <Subject/> */}
       <Subject mode={mode} CoursesTextColor={CoursesTextColor} SubjectNav ='SubjectNav'/>
 
